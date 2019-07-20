@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+{% block title %}403{% endblock %}
+{% block content %}
+    <section class="container text-center" style="min-height:600px;">
+    <h1>404, Page not Found!</h1>
+    <p>頁面不存在</p>
+        <a href="{% url 'blog:blog_index' %}" class="btn btn-primary">返回主頁</a>
+    </section>
+{% endblock %}
